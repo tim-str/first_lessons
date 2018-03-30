@@ -9,6 +9,8 @@ public class DomasticAnimal extends Animal { // наследование
     }
 
     public void liveWithPeople(){
+//        super.privateVoid();
+        super.protectedVoid();
         System.out.println("I am live with people");
     }
 
