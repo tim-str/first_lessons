@@ -8,9 +8,9 @@ public class Animal {
 //            и наследникам из любого пакета
 //    private - виден только в рамках своего класса
 
-//    default (без модификатора) виден только в рамках своего класса
+//    default (без модификатора) виден только в рамках своего пакета
 
-    private String name;
+    String name;
     public Animal(String name) {
         this.name = name;
     }
