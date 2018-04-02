@@ -32,7 +32,7 @@ class Red extends Soldier{
 class White extends Soldier {
 
     public White() {
-        super(300, 50);
+        super(10, 50);
     }
 
     @Override

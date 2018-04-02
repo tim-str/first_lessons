@@ -27,8 +27,7 @@ public class Animal {
     public void say(){
         privateVoid();
         System.out.println("I am Animal");
+
     }
-
-
 
 }

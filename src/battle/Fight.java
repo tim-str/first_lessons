@@ -3,6 +3,7 @@ package battle;
 import java.util.Random;
 
 public class Fight {
+
     public static void fight(Soldier[] whiteArmy, Soldier[] redArmy){
         Random rnd = new Random();
 
@@ -16,7 +17,20 @@ public class Fight {
     }
 
     public static void winner(Soldier[] whiteArmy, Soldier[] redArmy){
+        int whiteAlive = 0;
+        int redAlive = 0;
 
+        for (int i = 0; i < 10; i++){
+            if (redArmy[i].isAllive()){
+                redAlive++;
+            }
+
+            if (whiteArmy[i].isAllive()){
+                whiteAlive++;
+            }
+        }
+
+        System.out.println("whiteAlive " + whiteAlive + " redAlive " +redAlive);
     }
 
     public static void main(String[] args){
@@ -31,3 +45,10 @@ public class Fight {
         winner(whites, reds);
     }
 }
+
+
+// методы класса Object
+// Операторы final / static
+// Анонимные и вложенные классы
+
+
