@@ -20,7 +20,8 @@ public class StaticLesson {
 //        доступ  к статическим методам: имя_класса.имя_метода
         StaticExample.StaticVoid();
 //        обращение к статическому методу интерфейса
-        StaticInterface.staticVoid();
+        StaticInterface.staticVoid1();
+//        StaticExample.staticVoid1();
     }
 }
 
@@ -59,9 +60,9 @@ class StaticExample implements StaticInterface{
 //    статические методы интерфейса нельзя переопределить
 //    @Override
 //    только создать новый
-    static void staticVoid(){
-        System.out.println("staticVoid Interface");
-    }
+//    static void staticVoid1(){
+//        System.out.println("staticVoid StaticExample");
+//    }
 }
 //JAVA 8
 
@@ -69,7 +70,7 @@ interface StaticInterface{
 //    статические методы интерфейса нельзя переопределить
 //    доступны внутри интерфейса
 //    могут использоваться через интерфейс: имя_интерфейса.имя_метода
-    static void staticVoid(){
+    static void staticVoid1(){
         System.out.println("staticVoid Interface");
     }
 }
